@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://kit.fontawesome.com/25894adcd7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <div id="navbar">
+    
+    </div>
+      
+   <div id="quiz-container">
+   
+   <div class="topic" >
+      <img class="topic-img" src="../assets/math.jpg" alt="bj">
+      <button id="19" onclick="math()" class="btn">Math Quiz <i class="fas fa-arrow-right"></i></button>   
+   </div>
+   <div class="topic" >
+    <img class="topic-img" src="../assets/celebrity.jpg" alt="">
+    <button id="26" onclick="celeb()" class="btn">Celebrity Quiz <i class="fas fa-arrow-right"></i> </button> 
+ </div>
+ <div class="topic" >
+  <img class="topic-img" src="../assets/entertainment.jpg" alt="">
+  <button id="14" onclick="et()" class="btn">Entertainment Quiz <i class="fas fa-arrow-right"></i></button> 
+</div>
+<div class="topic" >
+  <img class="topic-img" src="../assets/sport.jpg" alt="">
+  <button class="btn" id="21" onclick="sports()">Sports Quiz <i class="fas fa-arrow-right"></i></button> 
+</div>
+   </div>
+  
+  </main>
+</body>
+<script src="../javascript/dashboard.js"></script>
+
+<script type="module">
+  import navbar2 from '../components/navbar2.js';
+   
+   document.getElementById('navbar').innerHTML = navbar2()
+</script>
+
+</html>

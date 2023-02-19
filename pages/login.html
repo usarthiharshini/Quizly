@@ -9,6 +9,9 @@
 </head>
 <body>
     <main>
+        <div id="navbar">
+
+        </div>
         <h2 class="title">
             Login
         </h2>
@@ -26,4 +29,9 @@
     </main>
 </body>
 <script src="../javascript/login.js"></script>
+<script type="module">
+    import navbar from '../components/navbar.js';
+   
+  document.getElementById('navbar').innerHTML = navbar()
+</script>
 </html>

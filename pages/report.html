@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="device-width" initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://kit.fontawesome.com/25894adcd7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div class="container">
+        <div >
+             <h3 id="score"></h3>
+        </div>
+        <div id="questions">
+                <p id="correct"  ></p>
+                <p id="wrong"></p>
+                <p id="skipped" ></p>
+        </div>
+        <button class="next-btn" onclick="displayReport()">View Report Card</button>
+        <div >
+           <table id="card">
+            <tr>
+                <th>Question</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+           </table>
+        </div>
+    </div>
+</body>
+<script src="../javascript/report.js"></script>
+<script type="module">
+   import navbar2 from '../components/navbar2.js';
+   
+   document.getElementById('navbar').innerHTML = navbar2()
+</script>
+</html>

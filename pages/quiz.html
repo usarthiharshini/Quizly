@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="../index.css">
 </head>
+
 <body>
-    hieee
-   <div id="quiz-container"></div>
+    <main>
+        <div id="navbar"></div>
+        <div class="container" id="container">
+            <div id="quiz-box">
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </main>
 </body>
-<script src="../javascript/index.js"></script>
+<script src="../javascript/quiz.js"></script>
+<script type="module">
+    import navbar2 from '../components/navbar2.js';
+    document.getElementById('navbar').innerHTML = navbar2()
+</script>
+
 </html>

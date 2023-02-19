@@ -9,13 +9,19 @@
 </head>
 <body>
     <main>
-        <h2 class="title">
-            Sign Up
-        </h2>
-        <div class="underline">
-            
+        <div id="navbar">
+
         </div>
         <form class="form-container" >
+            <div class="title-container">
+                <h2 class="title">
+                    Welcome to 
+                </h2><img class="logo" src="../assets/quizly-logo.png" />
+                
+            </div>
+            <div class="underline">
+                    
+            </div>
       <label for="first-name">First Name</label>
       <input type="text" id="first-name"/>
       <label for="last-name">Last Name</label>
@@ -29,4 +35,8 @@
     </main>
 </body>
 <script src="../javascript/signup.js"></script>
+<script type="module">
+    import navbar from '../components/navbar.js';
+  document.getElementById('navbar').innerHTML = navbar()
+</script>
 </html>

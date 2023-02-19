@@ -9,7 +9,8 @@ const login=()=>{
   console.log(userDetails.password + " "+ password );
    if(userDetails && email===userDetails.email && password===userDetails.password){
          alert('login success')
-         window.location.href="../pages/quiz.html";
+         localStorage.setItem('loggedIn', 'true')
+         window.location.href="../pages/dashboard.html";
    }
    else if(userDetails && email===userDetails.email && password!=userDetails.password){
         alert('wrong password')
